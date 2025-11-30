@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rijan Poudel | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header id="hero">
+        <div class="video-background-container">
+            <video autoplay loop muted playsinline id="video-background">
+                <source src="rijupiju.mp4" type="video/mp4">
+                Your browser does not support the video tag. 
+            </video>
+        </div>
+        
+        <nav class="navbar">
+            <a href="#" class="logo">Rijan Poudel</a> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+                ☰
+            </button>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>Rijan Poudel</h1>
+            <p>BSc (Hons) Cybersecurity & Aspiring Developer</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>My name is Rijan Poudel. I'm 19 years old and currently studying at Herald College Kathmandu. I am pursuing <span>BSc (Hons) Cybersecurity</span>. I am passionate about technology and solving complex problems.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">Penetration Testing</div>
+                    <div class="skill-item">Network Security</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript (Learning)</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid" id="projects-grid">
+                    <article class="project-card" data-project-id="weather-app">
+                        <h3>Project 1: Weather App</h3>
+                        <p>A simple application built using an external API to display real-time weather data.</p>
+                        
+
+[Image of Weather App Screenshot]
+
+                    </article>
+                    <article class="project-card" data-project-id="short-demo">
+                        <h3>Project 2: Short Demo</h3>
+                        <p>A video demonstration of a concept, embedded directly from YouTube Shorts.</p>
+                        [YouTube Video Embed]
+                    </article>
+                    <article class="project-card">
+                        <h3>Project 3: Network Audit</h3>
+                        <p>Analysis and report on security vulnerabilities in a simulated network environment.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form" action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="form-message" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rijan Poudel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
